@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<!-- This sets the language that your characters are in -->
+		<meta charset="utf-8">
+		<!-- This ensures that your media queries work -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- This is what appears in the tab of your browser page -->
+		<title></title>
+
+		<!-- This makes the bootstrap css work -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+		<!-- This connects my CSS external stylesheet to the index.html -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="https://use.fontawesome.com/9a77ea3aef.js"></script>
+	</head>
+	<body>
+
+   <div id="app">
+
+						<div class="bigdiv mt-5">
+								<i class="fa fa-commenting"></i><h1><i>Please Enter a Comment</i></h1>
+								<form class="form-horizontal">
+									<div class="form-group mt-5">
+												<input class="form-control" id="name" placeholder="Your Name" v-model="name">
+
+												<textarea class="form-control" id="comment" rows="6" columns="50" placeholder="Comment" v-model="comment" v-on:keyup.enter="addComment"
+												>
+
+
+											  </textarea>
+												<!-- <p> {{ comment }}</p> -->
+
+											<div class="row">
+												<li v-for="userComment in result" class="mt-5">
+													<label>{{ userComment }}</label>
+													<button class="form-control" id="btnn" type="button" v-on:click="removeComment(userComment)">Remove</button>
+												</li>
+											</div>
+
+
+												  <!-- <p> {{ name }}</p> -->
+									</div>
+								</form>
+							</div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- This gives access to the jquery library -->
+		<script
+		src="https://code.jquery.com/jquery-3.2.1.js"
+		integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+		crossorigin="anonymous"></script>
+
+		<!-- Popper is required for bootstrap 4 JS functionality -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+
+		<!-- This makes bootstrap 4 JS work -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+		<!-- This connects my JS external file to the index.html -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+		<script src="js/main.js" type="text/javascript"></script>
+
+	</body>
+</html>

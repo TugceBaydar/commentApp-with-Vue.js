@@ -1,0 +1,46 @@
+
+.bigdiv {
+  text-align: center;
+  margin-top: 50px;
+}
+
+form {
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+textarea {
+  margin-top: 10px;
+}
+
+.form-control {
+  margin-top: 20px;
+  box-shadow: 10px 14px 20px 0px #6d7c96;
+  background-color: #cbdde6;
+}
+
+
+.fa-commenting {
+  display: inline-block;
+  padding-right: 5px;
+}
+
+h1 {
+  display: inline-block;
+  font-size: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+.row,
+    button {
+  display: inline-block;
+}
+
+.row {
+  width: 50%;
+}
