@@ -7,7 +7,7 @@ var app = new Vue ({
   },
   methods: {
     addComment: function() {
-
+      var userName = this.name;
       var userComment = this.comment;
       this.result.push(userComment);
       this.comment = "";
